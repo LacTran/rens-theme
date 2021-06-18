@@ -1,0 +1,81 @@
+{% render 'hero' with {
+settings: section.settings,
+id:section.id
+} %}
+
+{% schema %}
+{
+"name" : "Hero",
+"settings":[
+{
+"type": "text",
+"id": "first_span",
+"label": "First Span",
+"default": "EFFORTLESS"
+},
+{
+"type": "text",
+"id": "second_span",
+"label": "Second Span",
+"default": "CONSCIOUS"
+},
+{
+"type": "text",
+"id": "first_heading",
+"label": "First Heading",
+"default": " STYLE //"
+},
+{
+"type": "text",
+"id": "second_heading",
+"label": "Second Heading",
+"default": " MATERIALS"
+},
+{
+"type": "textarea",
+"id": "copy",
+"label": "Body Copy",
+"default": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam provident."
+},
+{
+"type": "url",
+"id": "first_link_url",
+"label": "First Link URL"
+},
+{
+"type": "url",
+"id": "second_link_url",
+"label": "Second Link URL"
+},
+{
+"type": "text",
+"id": "first_link_text",
+"label": "First Link Text",
+"default": "SHOP MEN"
+},
+{
+"type": "text",
+"id": "second_link_text",
+"label": "Second Link Text",
+"default": "SHOP WOMEN"
+},
+{
+"type":"image_picker",
+"id":"small_image",
+"label":"Small Image",
+"info": "Dimensions: 991x991"
+},
+{
+"type": "image_picker",
+"id": "large_image",
+"label":"Large Image"
+}
+],
+"presets":[
+{
+"name":"Hero",
+"category":"Image w/ text"
+}
+]
+}
+{% endschema %}
